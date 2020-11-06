@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.mapbox.android.core.location.LocationEngine;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
   private LocationEngine locationEngine;
     private long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
     private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 5;
+
 
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
 
